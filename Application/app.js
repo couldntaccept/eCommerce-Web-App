@@ -9,8 +9,8 @@ const updateImg = require('./utils/updateurl.js');
 
 const updateDatabasePasswords = require('./utils/updateDatabasePasswords.js');
 
-//mongoose.connect('mongodb+srv://dlok7271:PNjluJUusJr3wNEH@cluster0.dixpan7.mongodb.net/comp5347').then(()=>{
-mongoose.connect('mongodb+srv://doadmin:x618tk7j03JTA9e5@comp5347lab03group07-e90fad6b.mongo.ondigitalocean.com/comp5347_demo?tls=true&authSource=admin&replicaSet=comp5347lab03group07').then(async()=>{
+mongoose.connect('mongodb+srv://test:KIs8WbB5MM2ye84n@cluster0.wwl0mqu.mongodb.net/?retryWrites=true&w=majority').then(async()=>{
+// mongoose.connect('mongodb+srv://doadmin:x618tk7j03JTA9e5@comp5347lab03group07-e90fad6b.mongo.ondigitalocean.com/comp5347_demo?tls=true&authSource=admin&replicaSet=comp5347lab03group07').then(async()=>{
   console.log ("DB Connected")
 
   // Check if the "carts" collection exists
