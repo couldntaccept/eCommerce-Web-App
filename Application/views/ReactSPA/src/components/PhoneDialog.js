@@ -60,8 +60,8 @@ export default function PhoneDialog(props) {
     if (props.open === true) {
       async function getPhone() {
         try {
-          console.log("Sending request to http://oldphonedeals.onrender.com/phones/view/?id=" + props.row._id)
-          const response = await fetch('http://oldphonedeals.onrender.com/phones/view/?id=' + props.row._id)
+          console.log("Sending request to https://oldphonedeals.onrender.com/phones/view/?id=" + props.row._id)
+          const response = await fetch('https://oldphonedeals.onrender.com/phones/view/?id=' + props.row._id)
           const data = await response.json();
 
 

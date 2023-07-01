@@ -24,7 +24,7 @@ const QuantityPopup = ({ title, id, item, onAddToCart, props, State, PhoneItem }
             return;
         }
         try {
-            const response = await fetch(`http://oldphonedeals.onrender.com/cart/add`, {
+            const response = await fetch(`https://oldphonedeals.onrender.com/cart/add`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -47,7 +47,7 @@ const QuantityPopup = ({ title, id, item, onAddToCart, props, State, PhoneItem }
 
         // update context if needed
         try {
-            const response = await fetch(`http://oldphonedeals.onrender.com/cart/user`, {
+            const response = await fetch(`https://oldphonedeals.onrender.com/cart/user`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -84,8 +84,8 @@ const QuantityPopup = ({ title, id, item, onAddToCart, props, State, PhoneItem }
     const handleNavigate = async () => {
         
         try {
-            console.log("Sending request to http://oldphonedeals.onrender.com/phones/view/?id=" + id)
-            const response = await fetch('http://oldphonedeals.onrender.com/phones/view/?id=' + id)
+            console.log("Sending request to https://oldphonedeals.onrender.com/phones/view/?id=" + id)
+            const response = await fetch('https://oldphonedeals.onrender.com/phones/view/?id=' + id)
             const data = await response.json();
             setPhoneData(data[0]);
             loginctx.setLastOpen(data[0]);
@@ -100,8 +100,8 @@ const QuantityPopup = ({ title, id, item, onAddToCart, props, State, PhoneItem }
     const grabById = async () => {
 
         try {
-            console.log("Sending request to http://oldphonedeals.onrender.com/phones/view/?id=" + id)
-            const response = await fetch('http://oldphonedeals.onrender.com/phones/view/?id=' + id)
+            console.log("Sending request to https://oldphonedeals.onrender.com/phones/view/?id=" + id)
+            const response = await fetch('https://oldphonedeals.onrender.com/phones/view/?id=' + id)
             const data = await response.json();
             setPhoneData(data[0]);
             if (data[0].stock > 0) {
@@ -120,7 +120,7 @@ const QuantityPopup = ({ title, id, item, onAddToCart, props, State, PhoneItem }
     const getitemQuantity = async () => {
         if(loginctx.LoginStatus !== false && loginctx.LoginUserId !== ''){
             try {
-                const response = await fetch("http://oldphonedeals.onrender.com/cart/quantity", {
+                const response = await fetch("https://oldphonedeals.onrender.com/cart/quantity", {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -146,8 +146,8 @@ const QuantityPopup = ({ title, id, item, onAddToCart, props, State, PhoneItem }
     //     grabById();
     //     // if (open === true){
     //     //     try {
-    //     //         console.log("Sending request to http://oldphonedeals.onrender.com/phones/view/?id=" + id)
-    //     //         const response = await fetch('http://oldphonedeals.onrender.com/phones/view/?id=' + id)
+    //     //         console.log("Sending request to https://oldphonedeals.onrender.com/phones/view/?id=" + id)
+    //     //         const response = await fetch('https://oldphonedeals.onrender.com/phones/view/?id=' + id)
     //     //         const data = await response.json();
     //     //         setPhoneData(data[0]);
     //     //     } catch (err) {

@@ -85,7 +85,7 @@ exports.addPhoneListing = async (req, res) => {
       return res.status(400).json({ error: 'Invalid brand' });
     }
 
-    const image = `http://oldphonedeals.onrender.com/images/${brand}.jpeg`;
+    const image = `https://oldphonedeals.onrender.com/images/${brand}.jpeg`;
 
     const phone = new Phone({
       title,

@@ -76,7 +76,7 @@ export default function PhoneDialogReview(props) {
     const ToggleHide = async () => {
         try {
             console.log("Sending POST to oldphonedeals.onrender.com/phones/review/sethidden")
-            const response = await fetch('http://oldphonedeals.onrender.com/phones/review/sethidden',
+            const response = await fetch('https://oldphonedeals.onrender.com/phones/review/sethidden',
                 {
                     method: 'POST',
                     headers: {

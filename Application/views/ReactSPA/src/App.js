@@ -69,7 +69,7 @@ function App() {
 
   const fetchUserDetails = async (userId) => {
     try {
-      const response = await fetch(`http://localhost:4000/users/${userId}`, {
+      const response = await fetch(`https://localhost:4000/users/${userId}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -87,7 +87,7 @@ function App() {
         localStorage.setItem("loginEmail", userDetails.email);
         
         try {
-          const response = await fetch(`http://oldphonedeals.onrender.com/cart/user`, {
+          const response = await fetch(`https://oldphonedeals.onrender.com/cart/user`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

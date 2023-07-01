@@ -32,7 +32,7 @@ export default function BestSeller(props) {
 
   const fetchBestSellerPhones = async () => {
     try {
-      const response = await fetch("http://oldphonedeals.onrender.com/phones/best")
+      const response = await fetch("https://oldphonedeals.onrender.com/phones/best")
       const data = await response.json();
       setData(data);
     } catch (error) {
