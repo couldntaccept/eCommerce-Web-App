@@ -30,7 +30,7 @@ export default function SignIn(props) {
 
     try {
       // Send a POST request to the /auth/login endpoint
-      const response = await fetch('https://localhost:4000/auth/login', {
+      const response = await fetch('https://oldphonedeals.onrender.com/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

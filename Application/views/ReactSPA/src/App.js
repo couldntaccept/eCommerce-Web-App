@@ -69,7 +69,7 @@ function App() {
 
   const fetchUserDetails = async (userId) => {
     try {
-      const response = await fetch(`https://localhost:4000/users/${userId}`, {
+      const response = await fetch(`https://oldphonedeals.onrender.com/users/${userId}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
