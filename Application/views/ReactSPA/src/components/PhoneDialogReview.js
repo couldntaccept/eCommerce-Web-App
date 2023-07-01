@@ -75,8 +75,8 @@ export default function PhoneDialogReview(props) {
     //toggles the the 'hidden: field' on the review and changes the color to gray
     const ToggleHide = async () => {
         try {
-            console.log("Sending POST to 127.0.0.1:4000/phones/review/sethidden")
-            const response = await fetch('http://127.0.0.1:4000/phones/review/sethidden',
+            console.log("Sending POST to oldphonedeals.onrender.com/phones/review/sethidden")
+            const response = await fetch('http://oldphonedeals.onrender.com/phones/review/sethidden',
                 {
                     method: 'POST',
                     headers: {

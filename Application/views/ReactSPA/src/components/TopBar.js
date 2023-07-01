@@ -25,7 +25,7 @@ export default function TopBar(props) {
     try {
       // need to be upated to context      
 
-      const response = await fetch(`http://127.0.0.1:4000/cart/user`, {
+      const response = await fetch(`http://oldphonedeals.onrender.com/cart/user`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -90,8 +90,8 @@ export default function TopBar(props) {
     try {
 
       props.setState("loading");
-      console.log("Sending request to http://127.0.0.1:4000/phones/search?title=" + props.SearchValue)
-      const response = await fetch('http://127.0.0.1:4000/phones/search?title=' + props.SearchValue)
+      console.log("Sending request to http://oldphonedeals.onrender.com/phones/search?title=" + props.SearchValue)
+      const response = await fetch('http://oldphonedeals.onrender.com/phones/search?title=' + props.SearchValue)
       const data = await response.json();
 
 

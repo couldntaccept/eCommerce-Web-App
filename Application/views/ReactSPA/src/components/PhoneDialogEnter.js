@@ -17,8 +17,8 @@ export default function PhoneDialogEnter(props) {
         try {
             setLoading(true)
             setPostButtonVariant("disabled")
-            console.log("Sending POST to 127.0.0.1:4000/phones/review")
-            const response = await fetch('http://127.0.0.1:4000/phones/review',
+            console.log("Sending POST to oldphonedeals.onrender.com/phones/review")
+            const response = await fetch('http://oldphonedeals.onrender.com/phones/review',
                 {
                     method: 'POST',
                     headers: {

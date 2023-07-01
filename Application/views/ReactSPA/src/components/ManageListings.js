@@ -84,7 +84,7 @@ export const ManageListings = () => {
     try {
       // if all valid send request to add listing
       if (isStockValid && isPriceValid && isTitleValid && isBrandValid) {
-        const response = await fetch('http://127.0.0.1:4000/users/listing/add', {
+        const response = await fetch('http://oldphonedeals.onrender.com/users/listing/add', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -124,7 +124,7 @@ export const ManageListings = () => {
 
   const fetchListings = async () => {
     try {
-        const response = await fetch("http://127.0.0.1:4000/users/listing",
+        const response = await fetch("http://oldphonedeals.onrender.com/users/listing",
         {
             method: 'POST',
             headers: {
@@ -148,7 +148,7 @@ export const ManageListings = () => {
 
   const enableDisableListing = async (listingId) => {
     try {
-      const response = await fetch("http://127.0.0.1:4000/users/listing/enable", 
+      const response = await fetch("http://oldphonedeals.onrender.com/users/listing/enable", 
       {
           method: 'POST',
           headers: {
@@ -169,7 +169,7 @@ export const ManageListings = () => {
 
   const disableListing = async (listingId) => {
     try {
-      const response = await fetch("http://127.0.0.1:4000/users/listing/disable", 
+      const response = await fetch("http://oldphonedeals.onrender.com/users/listing/disable", 
       {
           method: 'POST',
           headers: {
@@ -206,7 +206,7 @@ export const ManageListings = () => {
     // confirm before deleting
     if (window.confirm("Are you sure you want to delete this listing?")) {
       try {
-        const response = await fetch("http://127.0.0.1:4000/users/listing/delete", 
+        const response = await fetch("http://oldphonedeals.onrender.com/users/listing/delete", 
         {
             method: 'POST',
             headers: {

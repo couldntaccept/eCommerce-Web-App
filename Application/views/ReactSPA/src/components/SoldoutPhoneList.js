@@ -28,7 +28,7 @@ export default function Soldout(props) {
 
   const fetchSoldoutPhones = async () => {
     try {
-      const response = await fetch("http://127.0.0.1:4000/phones/soldout");
+      const response = await fetch("http://oldphonedeals.onrender.com/phones/soldout");
       const data = await response.json();
       setData(data);
     } catch (error) {

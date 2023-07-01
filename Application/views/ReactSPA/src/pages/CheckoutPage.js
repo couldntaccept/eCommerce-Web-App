@@ -19,7 +19,7 @@ const CheckoutPage = ({  }) => {
 
   const getCartItems = async () => {
       try {
-          const response = await fetch(`http://127.0.0.1:4000/cart/user`, {
+          const response = await fetch(`http://oldphonedeals.onrender.com/cart/user`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -45,7 +45,7 @@ const CheckoutPage = ({  }) => {
 
   const removeCartItem = async (cartItemId) => {
     try {
-        const response = await fetch(`http://127.0.0.1:4000/cart/remove`, {
+        const response = await fetch(`http://oldphonedeals.onrender.com/cart/remove`, {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json',
@@ -64,7 +64,7 @@ const CheckoutPage = ({  }) => {
 
   const clearCart = async () => {
     try {
-        const response = await fetch(`http://127.0.0.1:4000/cart/clear`, {
+        const response = await fetch(`http://oldphonedeals.onrender.com/cart/clear`, {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json',
@@ -82,7 +82,7 @@ const CheckoutPage = ({  }) => {
 
   const updateCartItem = async (cartItemId, quantity) => {
     try {
-        const response = await fetch("http://127.0.0.1:4000/cart/update ", {
+        const response = await fetch("http://oldphonedeals.onrender.com/cart/update ", {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json',
@@ -136,7 +136,7 @@ const CheckoutPage = ({  }) => {
   const HandleCheckout = async () => {
     // update stocks
     try {
-      const response = await fetch(`http://127.0.0.1:4000/cart/checkout`, {
+      const response = await fetch(`http://oldphonedeals.onrender.com/cart/checkout`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
