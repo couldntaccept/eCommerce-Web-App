@@ -19,7 +19,7 @@ export default function ResetPassword() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch('http://localhost:4000/auth/request-reset-password', {
+      const response = await fetch('https://oldphonedeals.onrender.com:4000/auth/request-reset-password', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

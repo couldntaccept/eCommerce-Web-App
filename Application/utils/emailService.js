@@ -10,7 +10,7 @@ const transporter = nodemailer.createTransport({
 });
 
 async function sendVerificationEmail(email, token) {
-  const verificationLink = `http://localhost:4000/auth/verify-email?token=${token}`;
+  const verificationLink = `https://oldphonedeals.onrender.com:4000/auth/verify-email?token=${token}`;
 
   const mailOptions = {
     from: '',
@@ -32,7 +32,7 @@ async function sendVerificationEmail(email, token) {
 }
 
 async function sendPasswordResetEmail(email, token) {
-  const passwordResetLink = `http://localhost:4000/new-password/${token}`;
+  const passwordResetLink = `https://oldphonedeals.onrender.com:4000/new-password/${token}`;
 
   const mailOptions = {
     from: '',

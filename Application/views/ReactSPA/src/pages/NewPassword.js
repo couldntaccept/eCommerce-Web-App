@@ -46,7 +46,7 @@ export default function NewPassword() {
         } 
 
         try {
-            const response = await fetch('http://localhost:4000/auth/reset-password', {
+            const response = await fetch('https://oldphonedeals.onrender.com:4000/auth/reset-password', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
