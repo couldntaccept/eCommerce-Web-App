@@ -5,7 +5,7 @@ async function updateImageUrls(brand) {
   const phones = await Phone.find({ brand });
 
   for (const phone of phones) {
-    const image = "http://127.0.0.1:4000/images/"+ phone.brand + ".jpeg";
+    const image = "http://oldphonedeals.onrender.com/images/"+ phone.brand + ".jpeg";
     await Phone.updateOne({ _id: phone._id }, { $set: { image } });
   }
 }
