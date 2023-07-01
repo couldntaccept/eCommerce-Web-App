@@ -22,7 +22,7 @@ export const EditProfile = ({ firstName, lastName, email, setSnackbarOpen}) => {
 
         event.preventDefault();
         try {
-            const response = await fetch('https://oldphonedeals.onrender.com:4000/users/updateProfile', {
+            const response = await fetch('https://oldphonedeals.onrender.com/users/updateProfile', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',  

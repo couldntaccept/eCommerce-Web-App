@@ -10,7 +10,7 @@ export const ViewComments = () => {
 
   useEffect(() => {
     const fetchComments = async () => {
-      const response = await fetch(`https://oldphonedeals.onrender.com:4000/phones/search?seller=${loginctx.LoginUserId}`);
+      const response = await fetch(`https://oldphonedeals.onrender.com/phones/search?seller=${loginctx.LoginUserId}`);
       const data = await response.json();
 
       for (let i = 0; i < data.length; i++) {

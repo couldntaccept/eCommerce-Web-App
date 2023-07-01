@@ -22,7 +22,7 @@ export const ChangePassword = ({ setSnackbarOpen }) => {
         }
 
         try {
-          const response = await fetch('https://oldphonedeals.onrender.com:4000/users/changePassword', {
+          const response = await fetch('https://oldphonedeals.onrender.com/users/changePassword', {
               method: 'POST',
               headers: {
                   'Content-Type': 'application/json',  

@@ -55,7 +55,7 @@ export default function SignUp() {
 
     try {
       // Send a POST request to the /auth/register endpoint
-      const response = await fetch('https://oldphonedeals.onrender.com:4000/auth/register', {
+      const response = await fetch('https://oldphonedeals.onrender.com/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
